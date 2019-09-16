@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+  body{
+    background: #ffffff;
+    background-size: cover;    
+    text-shadow: 4px 4px 4px rgb(255, 255, 255, 0.25);
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+  }
+  .paddHeist{
+      padding-left: 0;
+  }
+.imgHeist{
+    height: 80%;
+    width:100%;
+}
+
+
+.thHeist{
+background: #5550AA;
+box-shadow: 2px 2px 4px #5550AA;
+border-radius: 20px;
+background-size: contain;
+padding: 0;
+color: white;
+font-weight: 300;
+
+}
+.create{
+    font-size: xx-large;
+    /* font-weight: bold */
+}
+.contain{
+    text-align:center;
+}
+
+
+.buttonOption{
+    border: 1px solid #5550AA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #000000;
+    text-decoration: underline;
+}
+.buttonOption:hover{
+    background-color:#5550AA;
+}
+
+.loginHeist{
+    border-bottom: 1px solid #5550AA;
+    color:#5550AA;
+    style: text-decoration: underline;
+}
