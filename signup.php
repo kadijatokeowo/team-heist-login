@@ -3,9 +3,9 @@
  $error = '';  #this will be used when implementing error messages
 //this is the basic User sign up
  if(isset($_POST["submit"]))  
- {      if(file_exists('employee_data.json'))  
+ {      if(file_exists('Users.json'))  
            {  
-                $current_data = file_get_contents('employee_data.json');  
+                $current_data = file_get_contents('Users.json');  
                 $array_data = json_decode($current_data, true);  
                 $extra = array(  
                      'Fullname'            =>     $_POST['name'],  
@@ -18,7 +18,7 @@
                 $array_data[] = $extra;  
                 $final_data = json_encode($array_data);
                 $final_data .= "\n";  
-                if(file_put_contents('employee_data.json', $final_data))  
+                if(file_put_contents('Users.json', $final_data))  
                 {  
                      $message = "<label class='text-success'>File Appended Success fully</p>";  
                      header("Location: signup.php");
